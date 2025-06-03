@@ -1,0 +1,10 @@
+persistence:
+  defaultClassReplicaCount: 1
+
+ingress:
+  enabled: true
+  ingressClassName: traefik
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    traefik.ingress.kubernetes.io/router.middlewares: longhorn-basic-auth-middleware@kubernetescrd
+  host: longhorn.k8s.markgyoni.dev
