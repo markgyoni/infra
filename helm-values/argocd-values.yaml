@@ -1,6 +1,10 @@
 global:
   domain: "argocd.k8s.markgyoni.dev"
 
+server:
+  extraArgs:
+    - --insecure
+
 config:
   params:
     server.insecure: true
