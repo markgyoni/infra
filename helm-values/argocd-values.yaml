@@ -1,10 +1,6 @@
 global:
   domain: "argocd.k8s.markgyoni.dev"
 
-server:
-  ingress:
-    enabled: false
-
 config:
   params:
     server.insecure: true
