@@ -8,3 +8,6 @@ ingress:
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/router.middlewares: longhorn-basic-auth-middleware@kubernetescrd
   host: longhorn.k8s.markgyoni.dev
+
+preUpgradeChecker:
+  jobEnabled: false
